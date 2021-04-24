@@ -1,16 +1,11 @@
 import { createApp } from 'vue'
-import { ElButton, ElCard, ElLoading } from 'element-plus'
+import Antd from 'ant-design-vue'
+import 'ant-design-vue/dist/antd.css'
+import ElementPlus from 'element-plus'
+import 'element-plus/lib/theme-chalk/index.css'
 
 import App from './App.vue'
 import router from './router/index'
 import { key, store } from './store'
 
-createApp(App)
-  .use(router)
-  .use(store, key)
-
-  // 按需载入 Element Plus
-  .use(ElButton)
-  .use(ElCard)
-  .use(ElLoading)
-  .mount('#app')
+createApp(App).use(router).use(store, key).use(Antd).use(ElementPlus).mount('#app')
