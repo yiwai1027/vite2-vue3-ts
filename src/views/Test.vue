@@ -1,6 +1,6 @@
 <template>
   <div class="test-container page-container">
-    <div class="page-title">Unit Test Page</div>
+    <div class="page-title">测试页面</div>
     <p>count is: {{ count }}</p>
     <button @click="increment">increment</button>
   </div>
